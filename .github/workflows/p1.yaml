@@ -5,7 +5,7 @@ on:
 
 jobs:
   test1:
-    name: server_test
+    name: test1
     runs-on: ubuntu-latest
     steps:
     - name: start
@@ -15,8 +15,20 @@ jobs:
     - name: run scripts
       shell: bash
       run: |
-        wget -qO- git.io/superbench.sh | bash -s info
-
-            
+        ifconfig,
+        curl ifconfig.me
+  test2:
+    name: test2
+    runs-on: ubuntu-latest
+    steps:
+    - name: start
+      shell: bash
+      run: |
+        echo start
+    - name: run scripts
+      shell: bash
+      run: |
+        ifconfig,
+        curl ifconfig.me
             
             
