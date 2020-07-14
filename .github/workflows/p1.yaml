@@ -2,11 +2,11 @@ name: p1
 on: 
   push:
     branches: [ master ]
-    
+
 jobs:
   test1:
     name: server_test
-    runs-on: ubunt-latest
+    runs-on: ubuntu-latest
     steps:
     - name: start
       shell: bash
