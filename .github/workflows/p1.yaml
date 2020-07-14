@@ -15,7 +15,7 @@ jobs:
     - name: run scripts
       shell: bash
       run: |
-        apt install net-tools,
+        sudo apt install net-tools,
         ifconfig,
         curl ifconfig.me
   test2:
